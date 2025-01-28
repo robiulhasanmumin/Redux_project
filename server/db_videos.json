@@ -1,0 +1,161 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Introduction to JavaScript",
+      "duration": "0:30:00",
+      "views": 1000,
+      "likes": 200,
+      "dislikes": 200,
+      "author": "As Sunnah Skill Development",
+      "description": "This is an introduction to JavaScript for beginners.",
+      "date": "Jan 18, 2022",
+      "thumbnail": "https://img.youtube.com/vi/MDCp_rjGCrQ/0.jpg",
+      "tags": [
+        "javascript"
+      ],
+      "link": "https://www.youtube.com/embed/MDCp_rjGCrQ"
+    },
+    {
+        "id": "2",
+        "title": "Figma To CSS",
+        "duration": "0:30:00",
+        "views": 1000,
+        "likes": 500,
+        "dislikes": 200,
+        "author": "As Sunnah Skill Development",
+        "description": "This is an introduction to CSS for beginners.",
+        "date": "Jan 18, 2024",
+        "thumbnail": "https://img.youtube.com/vi/mmyueYzz8eY/0.jpg",
+        "tags": [
+          "CSS", "Figma"
+        ],
+        "link": "https://www.youtube.com/embed/mmyueYzz8eY"
+    },
+    {
+        "id": "3",
+        "title": "JavaScript Operators",
+        "duration": "0:30:00",
+        "views": 1000,
+        "likes": 500,
+        "dislikes": 200,
+        "author": "As Sunnah Skill Development",
+        "description": "This is an introduction to JavaScript for beginners.",
+        "date": "Jan 18, 2022",
+        "thumbnail": "https://img.youtube.com/vi/6YmWW05dZLM/0.jpg",
+        "tags": [
+          "JavaScript"
+        ],
+        "link": "https://www.youtube.com/embed/6YmWW05dZLM"
+    },
+    {
+        "id": "4",
+        "title": "Introduction to Git & GitHub",
+        "duration": "0:30:00",
+        "views": 1000,
+        "likes": 500,
+        "dislikes": 200,
+        "author": "As Sunnah Skill Development",
+        "description": "This is an introduction to JavaScript for beginners.",
+        "date": "Jan 18, 2022",
+        "thumbnail": "https://img.youtube.com/vi/MDCp_rjGCrQ/0.jpg",
+        "tags": [
+          "Github"
+        ],
+        "link": "https://www.youtube.com/embed/MDCp_rjGCrQ"
+    },
+    {
+        "id": "5",
+        "title": "Introduction to CSS Flexbox",
+        "duration": "0:30:00",
+        "views": 1000,
+        "likes": 500,
+        "dislikes": 200,
+        "author": "As Sunnah Skill Development",
+        "description": "This is an introduction to JavaScript for beginners.",
+        "date": "Jan 18, 2022",
+        "thumbnail": "https://img.youtube.com/vi/epWTHqeMCMY/0.jpg",
+        "tags": [
+          "CSS"
+        ],
+        "link": "https://www.youtube.com/embed/epWTHqeMCMY"
+    },
+    {
+      "id": "6",
+      "title": "Introduction to React",
+      "duration": "0:30:00",
+      "views": 1000,
+      "likes": 500,
+      "dislikes": 200,
+      "author": "As Sunnah Skill Development",
+      "description": "This is an introduction to JavaScript for beginners.",
+      "date": "Jan 18, 2022",
+      "thumbnail": "https://img.youtube.com/vi/gFicda3xgKc/0.jpg",
+      "tags": [
+        "React"
+      ],
+      "link": "https://youtu.be/gFicda3xgKc?si=ZM-ChNMRPtLKxZiF"
+  },
+  {
+    "id": "7",
+    "title": "Introduction to TypeScript",
+    "duration": "0:30:00",
+    "views": 1000,
+    "likes": 500,
+    "dislikes": 200,
+    "author": "As Sunnah Skill Development",
+    "description": "This is an introduction to JavaScript for beginners.",
+    "date": "Jan 18, 2022",
+    "thumbnail": "https://img.youtube.com/vi/U1rMPFFT7r8/0.jpg",
+    "tags": [
+      "TypeScript"
+    ],
+    "link": "https://youtu.be/U1rMPFFT7r8?si=6Jy_wEMVCsPNakQN"
+},
+{
+  "id": "8",
+  "title": "Introduction to Redux",
+  "duration": "0:30:00",
+  "views": 1000,
+  "likes": 500,
+  "dislikes": 200,
+  "author": "As Sunnah Skill Development",
+  "description": "This is an introduction to JavaScript for beginners.",
+  "date": "Jan 18, 2022",
+  "thumbnail": "https://img.youtube.com/vi/qhll3DXuLHI/0.jpg",
+  "tags": [
+    "Redux"
+  ],
+  "link": "https://youtu.be/qhll3DXuLHI?si=lQNUqme1XM0lXnY9"
+}
+
+
+  ],
+  "tags": [
+    {
+      "id":"1",
+      "name": "javascript"
+    },
+    {
+      "id":"2",
+      "name": "CSS"
+    },
+    {
+      "id":"3",
+      "name": "Figma"
+    },
+    {
+      "id":"4",
+      "name": "React"
+    },
+    {
+      "id":"5",
+      "name": "Redux"
+    },
+
+    {
+      "id":"6",
+      "name": "Github"
+    }
+  ]
+}
