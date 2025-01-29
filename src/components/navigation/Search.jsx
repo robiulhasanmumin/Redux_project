@@ -1,73 +1,82 @@
-// import { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { setSearchTerm } from "../../features/filter/filterSlice";
-
-// export default function Search(){
-//     const [input, setInput] = useState('');
-//     const dispatch = useDispatch();
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//         dispatch(setSearchTerm(input))
-//     }
-//     return (
-//         <form onSubmit={handleSubmit} >
-//             <input
-//                 className="outline-none border-none mr-2"
-//                 type="search"
-//                 name="search"
-//                 placeholder="Search"
-//                 value={input}
-//                 onChange={(e)=>setInput(e.target.value)}
-//             />
-//         </form>
-//     )
-// }
-
-
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { setSearchTerm } from "../../features/filter/filterSlice";
+import { useNavigate } from "react-router-dom";
 
-// Debounce হুক
-function useDebounce(value, delay) {
-    const [debouncedValue, setDebouncedValue] = useState(value);
-
-    useEffect(() => {
-        const handler = setTimeout(() => {
-            setDebouncedValue(value);
-        }, delay);
-
-        return () => {
-            clearTimeout(handler);
-        };
-    }, [value, delay]);
-
-    return debouncedValue;
-}
-
-export default function Search() {
-    const [input, setInput] = useState("");
+export default function Search(){
+    const [input, setInput] = useState('');
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-    // ডেবাউন্স করা ইনপুট
-    const debouncedInput = useDebounce(input, 500);
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(setSearchTerm(input))
+    }
     useEffect(() => {
-        if (debouncedInput !== "") {
-            dispatch(setSearchTerm(debouncedInput));
-        }
-    }, [debouncedInput, dispatch]);
+                const delayDebounceFn = setTimeout(() => {
+                    dispatch(setSearchTerm(input)); 
+        
+                    if (input.trim() !== "") {
+                        navigate("/"); }
+        
+                }, 500); 
+        
+                return () => clearTimeout(delayDebounceFn);
+
+            }, [input, dispatch, navigate]);
+        
 
     return (
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={handleSubmit} >
             <input
                 className="outline-none border-none mr-2"
                 type="search"
                 name="search"
                 placeholder="Search"
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e)=>setInput(e.target.value)}
             />
         </form>
-    );
+    )
 }
+
+
+
+
+// import { useState, useEffect } from "react";
+// import { useDispatch } from "react-redux";
+// import { setSearchTerm } from "../../features/filter/filterSlice";
+// import { useNavigate } from "react-router-dom";
+
+// export default function Search() {
+//     const [input, setInput] = useState("");
+//     const dispatch = useDispatch();
+//     const navigate = useNavigate();
+
+//     // ডিবাউন্স লজিক
+//     useEffect(() => {
+//         const delayDebounceFn = setTimeout(() => {
+//             dispatch(setSearchTerm(input)); // সার্চ অ্যাকশন ডিপ্যাচ
+
+//             if (input.trim() !== "") {
+//                 navigate("/"); }// হোম পেজে রিডিরেক্ট
+
+//         }, 500); // ৫০০ মিলিসেকেন্ড ওয়েট
+
+//         return () => clearTimeout(delayDebounceFn); // আগের টাইমআউট ক্লিয়ার করা
+//     }, [input, dispatch, navigate]);
+
+//     return (
+//         <form onSubmit={(e) => e.preventDefault()}>
+//             <input
+//                 className="outline-none border-none mr-2"
+//                 type="search"
+//                 name="search"
+//                 placeholder="Search"
+//                 value={input}
+//                 onChange={(e) => setInput(e.target.value)}
+//             />
+//         </form>
+//     );
+// }
+

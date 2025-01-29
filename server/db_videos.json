@@ -56,7 +56,7 @@
         "likes": 500,
         "dislikes": 200,
         "author": "As Sunnah Skill Development",
-        "description": "This is an introduction to JavaScript for beginners.",
+        "description": "This is an introduction to git for beginners.",
         "date": "Jan 18, 2022",
         "thumbnail": "https://img.youtube.com/vi/MDCp_rjGCrQ/0.jpg",
         "tags": [
@@ -72,7 +72,7 @@
         "likes": 500,
         "dislikes": 200,
         "author": "As Sunnah Skill Development",
-        "description": "This is an introduction to JavaScript for beginners.",
+        "description": "This is an introduction to css for beginners.",
         "date": "Jan 18, 2022",
         "thumbnail": "https://img.youtube.com/vi/epWTHqeMCMY/0.jpg",
         "tags": [
@@ -88,7 +88,7 @@
       "likes": 500,
       "dislikes": 200,
       "author": "As Sunnah Skill Development",
-      "description": "This is an introduction to JavaScript for beginners.",
+      "description": "This is an introduction to react for beginners.",
       "date": "Jan 18, 2022",
       "thumbnail": "https://img.youtube.com/vi/gFicda3xgKc/0.jpg",
       "tags": [
@@ -104,7 +104,7 @@
     "likes": 500,
     "dislikes": 200,
     "author": "As Sunnah Skill Development",
-    "description": "This is an introduction to JavaScript for beginners.",
+    "description": "This is an introduction to typeScript for beginners.",
     "date": "Jan 18, 2022",
     "thumbnail": "https://img.youtube.com/vi/U1rMPFFT7r8/0.jpg",
     "tags": [
@@ -120,7 +120,7 @@
   "likes": 500,
   "dislikes": 200,
   "author": "As Sunnah Skill Development",
-  "description": "This is an introduction to JavaScript for beginners.",
+  "description": "This is an introduction to redux for beginners.",
   "date": "Jan 18, 2022",
   "thumbnail": "https://img.youtube.com/vi/qhll3DXuLHI/0.jpg",
   "tags": [

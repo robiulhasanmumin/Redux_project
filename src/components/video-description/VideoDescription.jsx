@@ -2,7 +2,7 @@ import VideoLikeUnlike from "./VideoLikeUnlike";
 import VideoPlayer from "./VideoPlayer";
 export default function VideoDescription({video}){
     // const {video, loading, error} = useSelector(state=>state.video);
-    const {title, link, description, date} = video;
+    const {title, link, description, date,} = video;
     console.log('video description')
     console.log(video)
     return (
